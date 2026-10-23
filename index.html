@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f1eb">
+<meta name="description" content="Independent developer building practical AI software, real-time voice systems, and useful tools.">
+<title>Independent Developer — AI & Real-Time Systems</title>
+<style>
+:root{--paper:#f4f1eb;--ink:#20211e;--muted:#686a62;--line:#d6d2c8;--accent:#b7462e;--panel:#eae6dd;--white:#fbfaf7;--serif:Georgia,"Times New Roman",serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;padding:23px 0;border-bottom:1px solid var(--line);gap:20px}.wordmark{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.wordmark span{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:22px;font-size:13px;color:var(--muted)}nav a{text-decoration:none}nav a:hover{color:var(--accent)}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--accent)}.hero{padding:clamp(65px,10vw,125px) 0 80px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(230px,.55fr);gap:54px;align-items:end}.hero h1{font:400 clamp(48px,7.5vw,94px)/.99 var(--serif);letter-spacing:-.055em;margin:20px 0 25px;max-width:800px}.hero h1 em{color:var(--accent);font-weight:400}.lede{max-width:650px;font-size:clamp(17px,2vw,20px);color:#4d4e48}.hero-aside{border-top:2px solid var(--ink);padding-top:17px}.aside-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:750}.hero-aside p{margin:10px 0 18px;font-size:14px}.availability{display:inline-flex;align-items:center;gap:9px;font-size:12px;color:var(--muted)}.dot{width:7px;height:7px;background:#4f7a58;border-radius:50%;display:inline-block}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid var(--ink);text-decoration:none;font-size:13px;font-weight:750;transition:background .18s,color .18s}.btn.primary{background:var(--ink);color:var(--white)}.btn:hover{background:var(--accent);border-color:var(--accent);color:white}.section{padding:67px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:190px 1fr;gap:32px;margin-bottom:35px}.section-index{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800}.section h2{font:400 clamp(34px,4.5vw,52px)/1.05 var(--serif);letter-spacing:-.035em;margin:0}.section-intro{color:var(--muted);max-width:650px;margin:12px 0 0}.project-top{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}.project-copy h3{font:400 36px/1.05 var(--serif);letter-spacing:-.03em;margin:0 0 10px}.project-copy p{color:#51524b}.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--accent)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.chip{border:1px solid var(--line);padding:5px 9px;font-size:11px;color:#51524b}.project-note{font-size:12px;color:var(--muted);border-left:2px solid var(--accent);padding-left:12px;margin-top:20px}.media-stack{display:grid;gap:12px}.media-stack img{width:100%;display:block;border:1px solid var(--line)}.media-placeholder{min-height:245px;background:var(--panel);border:1px solid var(--line);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;overflow:hidden}.media-placeholder:before,.media-placeholder:after{content:"";position:absolute;border:1px solid #c8c2b6;transform:rotate(-24deg);width:150%;height:1px;top:50%;left:-25%}.media-placeholder:after{transform:rotate(24deg)}.media-placeholder>*{position:relative;z-index:1}.media-placeholder .media-icon{width:44px;height:44px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;background:var(--paper);margin-bottom:12px;font-size:17px}.media-placeholder strong{font-size:13px;background:var(--panel);padding:0 7px}.media-placeholder small{font-size:11px;color:var(--muted);max-width:280px;background:var(--panel);padding:0 7px}.media-caption{font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:15px}.video-frame{width:100%;display:block;aspect-ratio:16/9;background:#222;border:1px solid var(--line)}.media-instructions{font-size:12px;color:var(--muted);margin:8px 0 0}.subhead{font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;margin:28px 0 12px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}.feature{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:155px}.feature .num{font:italic 18px var(--serif);color:var(--accent)}.feature h4{margin:11px 0 5px;font-size:14px}.feature p{margin:0;font-size:13px;color:var(--muted)}.status-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.status{padding:22px;background:var(--white);border:1px solid var(--line)}.status h3{font:400 25px var(--serif);margin:0 0 14px}.status ul{margin:0;padding-left:19px;color:#51524b;font-size:13px}.status li+li{margin-top:8px}.status.working{border-top:3px solid #557b5a}.status.building{border-top:3px solid var(--accent)}.skills{display:grid;grid-template-columns:190px 1fr;gap:32px}.skill-list{display:flex;flex-wrap:wrap;gap:9px}.skill-list span{font-size:13px;padding:8px 11px;border:1px solid var(--line)}.contrib-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}.contrib{border-top:2px solid var(--ink);padding-top:15px}.contrib h3{font:400 26px var(--serif);margin:0 0 8px}.contrib p{color:var(--muted);font-size:14px;margin:0}.contact{background:var(--ink);color:var(--paper);padding:clamp(35px,6vw,68px);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.contact h2{font:400 clamp(36px,5vw,58px)/1.03 var(--serif);letter-spacing:-.04em;margin:12px 0}.contact p{color:#c6c3ba;max-width:540px;margin-bottom:0}.contact .eyebrow{color:#e69a84}.contact .btn{border-color:var(--paper);color:var(--paper)}.contact .btn:hover{background:var(--accent);border-color:var(--accent)}footer{display:flex;justify-content:space-between;gap:20px;padding:25px 0 35px;color:var(--muted);font-size:11px}.hidden{display:none!important}
+@media(max-width:760px){.wrap{width:min(100% - 32px,600px)}.topbar{align-items:flex-start;flex-direction:column}.hero{grid-template-columns:1fr;gap:34px;padding:64px 0}.hero-aside{max-width:500px}.section{padding:48px 0}.section-head,.skills{grid-template-columns:1fr;gap:13px}.project-top{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature{min-height:0}.status-grid,.contrib-grid{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.contact .actions{margin-top:0}footer{flex-direction:column;gap:7px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Home">Independent developer<span> /</span> AI systems</a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Selected work</a><a href="#status">Project status</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow">Independent builder · Pakistan · Open to collaboration</div>
+        <h1 id="hero-title">I build AI that has to work <em>in real time.</em></h1>
+        <p class="lede">I’m an independent developer focused on practical AI applications—especially voice, real-time pipelines, and the engineering needed to turn model capabilities into usable software.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">Explore ClearCommit <span aria-hidden="true">&nbsp;↘</span></a>
+          <a class="btn" href="https://github.com/legendboy78/ClearCommit" target="_blank" rel="noopener">Source on GitHub ↗</a>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <div class="aside-label">Current focus</div>
+        <p>Building and testing ClearCommit, a Windows desktop app for two-way live voice translation. Interested in AI integration, low-latency systems, reliability, and useful human-facing tools.</p>
+        <div class="availability"><span class="dot" aria-hidden="true"></span> Available for hackathon collaboration</div>
+      </aside>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <div class="section-index">01 / Selected work</div>
+        <div><h2 id="work-title">ClearCommit</h2><p class="section-intro">A real-time voice translation desktop app, built around a simple requirement: the conversation should keep moving while the software listens, translates, and speaks.</p></div>
+      </div>
+      <div class="project-top">
+        <div class="project-copy">
+          <div class="kicker">Python · Windows desktop · Voice AI</div>
+          <h3>Speak. Understand. Keep going.</h3>
+          <p>ClearCommit is a Python desktop application for two-way live voice translation. One side’s speech is recognized and translated into English captions, while the user’s microphone is translated into the other language and delivered as speech.</p>
+          <p>The project focuses on connecting speech recognition, translation, and text-to-speech into a usable live pipeline—not treating each model call as an isolated demo.</p>
+          <div class="chips" aria-label="Technologies">
+            <span class="chip">Python</span><span class="chip">CustomTkinter</span><span class="chip">Groq / Whisper</span><span class="chip">LLM translation</span><span class="chip">Deepgram Aura</span><span class="chip">ElevenLabs</span>
+          </div>
+          <p class="project-note">Technology names describe components used in the project; exact availability depends on local configuration and provider credentials. No credentials are included on this page.</p>
+          <div class="actions" style="margin-top:22px">
+            <a class="btn primary" href="https://github.com/legendboy78/ClearCommit" target="_blank" rel="noopener">View the code on GitHub ↗</a>
+          </div>
+        </div>
+        <div class="media-stack">
+          <img src="assets/clearcommit-live.png" alt="ClearCommit interpreting a live two-way conversation between Greek and English, with translated captions visible" width="1526" height="927" loading="eager">
+          <div class="media-caption"><span>FIG. 01 — Live two-way interpretation (Greek → English)</span><span>Running build</span></div>
+          <img src="assets/clearcommit-interface.png" alt="ClearCommit main interface showing the header, caption panels, and the five-tab AI workspace" width="1422" height="875" loading="lazy">
+          <div class="media-caption"><span>FIG. 02 — Main interface: captions, controls, AI workspace</span><span>Running build</span></div>
+          <!-- Demo video slot: when the recording is ready, save it as assets/clearcommit-demo.mp4
+               and replace the placeholder below with:
+               <video class="video-frame" controls preload="metadata" poster="assets/clearcommit-live.png">
+                 <source src="assets/clearcommit-demo.mp4" type="video/mp4">
+                 Your browser does not support embedded video.
+               </video>
+          -->
+          <div class="media-placeholder" style="min-height:150px" aria-label="Demo video placeholder">
+            <div class="media-icon" aria-hidden="true">▶</div>
+            <strong>Short live demo</strong>
+            <small>Demo video coming soon — the interpreter running end to end.</small>
+          </div>
+          <div class="media-caption"><span>FIG. 03 — Live workflow</span><span>Demo coming soon</span></div>
+        </div>
+      </div>
+
+      <div class="subhead">What the project is designed to do</div>
+      <div class="feature-grid">
+        <article class="feature"><div class="num">01</div><h4>Two-way voice translation</h4><p>Support a conversation where each participant speaks their own language.</p></article>
+        <article class="feature"><div class="num">02</div><h4>Live captions and speech</h4><p>Turn recognized speech into translated text and translated audio through a desktop interface.</p></article>
+        <article class="feature"><div class="num">03</div><h4>Real-world audio handling</h4><p>Account for issues such as noisy input, echo, recognition errors, and the timing of live turns.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="status" aria-labelledby="status-title">
+      <div class="section-head">
+        <div class="section-index">02 / Honest status</div>
+        <div><h2 id="status-title">What works, and what’s still being built.</h2><p class="section-intro">The core interpreter is the established part of the project. Additional AI coaching and meeting workflows should be treated as in development until individually connected and validated in real conversations.</p></div>
+      </div>
+      <div class="status-grid">
+        <article class="status working">
+          <h3>Core interpreter</h3>
+          <ul>
+            <li>Python Windows desktop interface.</li>
+            <li>Two-way live voice translation workflow using speech recognition, LLM translation, and text-to-speech components.</li>
+            <li>Transcript display and audio-pipeline safeguards have been developed as part of the app.</li>
+            <li>Real-world quality and latency still need to be judged on the actual machine and network used for a demo.</li>
+          </ul>
+        </article>
+        <article class="status building">
+          <h3>AI companion features</h3>
+          <ul>
+            <li>Communication coaching for tone, phrasing, and clarity.</li>
+            <li>Meeting intelligence for decisions, action items, and unresolved questions.</li>
+            <li>Evidence-grounded assistant responses based on the conversation transcript.</li>
+            <li>These features require separate provider integration and testing; this page does not claim they are production-ready.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-title">
+      <div class="section-head">
+        <div class="section-index">03 / How I work</div>
+        <div><h2 id="approach-title">Make it useful. Test it. Keep the working parts.</h2><p class="section-intro">I’m most interested in the unglamorous work that makes an AI feature dependable: wiring systems together, finding failure modes, measuring real behavior, and improving the product without breaking what already works.</p></div>
+      </div>
+      <div class="skills">
+        <div class="section-index">Tools &amp; focus areas</div>
+        <div class="skill-list">
+          <span>Python application development</span><span>LLM integration</span><span>Speech recognition</span><span>Text-to-speech</span><span>Real-time pipelines</span><span>Latency &amp; reliability</span><span>Debugging</span><span>Test-first iteration</span><span>Desktop UX</span>
+        </div>
+      </div>
+      <div class="subhead">Ways I can contribute to a team</div>
+      <div class="contrib-grid">
+        <article class="contrib"><h3>AI integration</h3><p>Connect model APIs to a real product flow, manage inputs and outputs, and keep optional AI features from breaking the core experience.</p></article>
+        <article class="contrib"><h3>Implementation &amp; debugging</h3><p>Trace issues across components, reproduce failures, and make focused changes instead of rewriting working systems unnecessarily.</p></article>
+        <article class="contrib"><h3>Testing under pressure</h3><p>Define a small testable scope, verify behavior with realistic scenarios, and report what works, what fails, and what remains uncertain.</p></article>
+        <article class="contrib"><h3>Product-minded engineering</h3><p>Keep the demo centered on a real user problem, a coherent workflow, and evidence that the feature actually works.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="contact">
+        <div>
+          <div class="eyebrow">04 / Contact &amp; collaboration</div>
+          <h2 id="contact-title">Building something real?</h2>
+          <p>I’m interested in collaborating with people who want to build, test, and ship a useful prototype. For a hackathon, I prefer a clear scope, frequent communication, and concrete deliverables.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="https://github.com/legendboy78" target="_blank" rel="noopener">GitHub — @legendboy78 ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><span>Independent developer · AI &amp; real-time systems</span><span>Built as a lightweight portfolio · Hosted on GitHub Pages</span></footer>
+</div>
+</body>
+</html>
